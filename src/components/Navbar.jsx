@@ -19,7 +19,7 @@ const Navbar = () => {
 
       <ul className='flex gap-5 justify-center items-center'>
         <Link to="/login" className='bg-blue-600 px-4 py-2 rounded hover:bg-blue-700'>Login</Link>
-        <span onClick={()=> !setMenu(true)} className='sm:hidden'>Menu</span>
+        <span onClick={()=> !setMenu(showMenu)} className='sm:hidden'>Menu</span>
       </ul>
       <ul className={` ${menu ? 'flex' : 'hidden'} gap-10 sm:gap-5 sm:hidden flex-col absolute top-16 left-0 w-full bg-gray-800 p-5`}>
           <li onClick={()=> !setMenu(false)} className='hover:text-gray-300'><NavLink className={NavLink} to="/">Home</NavLink></li>
