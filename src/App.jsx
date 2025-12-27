@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/404" element={<h1 className='text-center mt-10 text-3xl font-bold'>404 - Page Not Found</h1>} />
+          <Route path="*" element={<h1 className='text-center mt-10 text-3xl font-bold'>404 - Page Not Found</h1>} />
         </Routes>
       </Router>
     </div>
