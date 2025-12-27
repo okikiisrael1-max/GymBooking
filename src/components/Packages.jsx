@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Packages = () => {
   return (
@@ -20,7 +21,9 @@ const Packages = () => {
                 <li>- Locker room access</li>
                 <li>- Free Wi-Fi</li>
             </ul>
+            <Link to="/payment">
             <button className='mt-4 bg-blue-600 px-4 py-2 rounded hover:bg-blue-700'>Choose Plan</button>
+            </Link>
         </div>
         <div className='bg-gray-800 p-4 rounded-lg'>
             <h3 className='text-xl font-semibold mb-2'>Standard Package</h3>
@@ -32,7 +35,9 @@ const Packages = () => {
                 <li>- Access to group fitness classes</li>
                 <li>- Extended gym hours</li>
             </ul>
+            <Link to="/payment">
             <button className='mt-4 bg-blue-600 px-4 py-2 rounded hover:bg-blue-700'>Choose Plan</button>
+            </Link>
         </div>
         <div className='bg-gray-800 p-4 rounded-lg'>
             <h3 className='text-xl font-semibold mb-2'>Premium Package</h3>
@@ -44,7 +49,9 @@ const Packages = () => {
                 <li>- Personal training sessions</li>
                 <li>- Nutritional guidance</li>
             </ul>
-            <button className='mt-4 bg-blue-600 px-4 py-2 rounded hover:bg-blue-700'>Choose Plan</button>   
+            <Link to="/payment">
+            <button className='mt-4 bg-blue-600 px-4 py-2 rounded hover:bg-blue-700'>Choose Plan</button>
+            </Link>
         </div>
       </div>
     </div>
