@@ -1,5 +1,6 @@
 import React from 'react'
 import Footer from '../components/Footer'
+import { Link } from 'react-router-dom'
 
 const Booking = () => {
   return (
@@ -14,17 +15,23 @@ const Booking = () => {
             <div className='border border-gray-300 rounded-lg p-4 mb-4'>
               <h3 className='text-xl font-semibold'>Yoga Class</h3>
               <p className='text-gray-600'>Date: July 15, 2024 | Time: 10:00 AM</p>
+              <Link to="/booking-session">
               <button className='mt-2 bg-green-500 text-white py-1 px-3 rounded hover:bg-green-600 transition duration-300'>Book Session</button>
+              </Link>
             </div>
             <div className='border border-gray-300 rounded-lg p-4 mb-4'>
               <h3 className='text-xl font-semibold'>Strength Training</h3>
               <p className='text-gray-600'>Date: July 20, 2024 | Time: 2:00 PM</p>
+              <Link to="/booking-session">
               <button className='mt-2 bg-green-500 text-white py-1 px-3 rounded hover:bg-green-600 transition duration-300'>Book Session</button>
+              </Link>
             </div>
             <div className='border border-gray-300 rounded-lg p-4 mb-4'>
               <h3 className='text-xl font-semibold'>Nutrition Consultation</h3>
               <p className='text-gray-600'>Date: July 25, 2024 | Time: 11:00 AM</p>
+              <Link to="/booking-session">
               <button className='mt-2 bg-green-500 text-white py-1 px-3 rounded hover:bg-green-600 transition duration-300'>Book Session</button>
+              </Link>
             </div>
           </div>
         </div>
