@@ -8,6 +8,8 @@ import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
 import Login from './pages/Login.jsx'
 import SignUp from './pages/SignUp.jsx'
+import BookingPage from './pages/BookingPage.jsx'
+import Payment from './pages/Payment.jsx'
 
 const App = () => {
   return (
@@ -22,6 +24,8 @@ const App = () => {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/booking-session" element={<BookingPage />} />
+          <Route path="/payment" element={<Payment />} />
           <Route path="*" element={<h1 className='text-center mt-10 text-3xl font-bold'>404 - Page Not Found</h1>} />
         </Routes>
       </Router>
